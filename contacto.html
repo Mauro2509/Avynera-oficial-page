@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Avynera</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contacto">
+
+<header class="navbar">
+  <div class="contenedor">
+    <a class="logo" href="index.html">✈ AVYNERA</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Explorar</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a id="nav-sesion" class="btn-login" href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <div class="titulo-pagina centro">
+    <h1>Contacto</h1>
+    <p class="datos">¿Tienes dudas o sugerencias sobre un destino? Escríbenos.</p>
+  </div>
+  <div id="zona-contacto">
+    <form class="formulario" id="form-contacto">
+      <label>Nombre<input type="text" id="c-nombre" placeholder="Tu nombre" required></label>
+      <label>Correo electrónico<input type="email" id="c-email" placeholder="correo@ejemplo.com" required></label>
+      <label>Asunto
+        <select id="c-asunto">
+          <option>Consulta sobre un destino</option>
+          <option>Ayuda con una reserva</option>
+          <option>Sugerencia</option>
+          <option>Otro</option>
+        </select>
+      </label>
+      <label>Mensaje<textarea id="c-mensaje" rows="5" minlength="10" placeholder="Escribe tu mensaje" required></textarea></label>
+      <button class="btn btn-primario" type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="contenedor">
+    <div class="cols">
+      <div>
+        <h3>AVYNERA</h3>
+        <p>Descubre nuevos lugares, culturas y experiencias.</p>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Explorar destinos</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="reservar.html">Reservar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <p class="copy">© 2026 Avynera. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="datos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

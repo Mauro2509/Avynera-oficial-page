@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perfil | Avynera</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="perfil">
+
+<header class="navbar">
+  <div class="contenedor">
+    <a class="logo" href="index.html">✈ AVYNERA</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Explorar</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a id="nav-sesion" class="btn-login" href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="contenedor perfil">
+  <aside class="menu-lateral">
+    <div class="usuario">
+      <div class="avatar">👤</div>
+      <div><b id="p-nombre-lat"></b><br><span class="datos" id="p-email-lat"></span></div>
+    </div>
+    <a class="activo" href="perfil.html">Mi perfil</a>
+    <a href="#reservas">Mis reservas</a>
+    <a href="favoritos.html">Favoritos</a>
+    <button type="button" class="menu-btn" id="salir">Cerrar sesión</button>
+  </aside>
+
+  <section>
+    <h2>Mi perfil</h2><br>
+    <div class="panel perfil-card">
+      <div class="usuario">
+        <div class="avatar grande">👤</div>
+        <div><b id="p-nombre"></b><br><span class="datos" id="p-email"></span></div>
+      </div>
+      <button class="btn btn-secundario" id="editar" type="button">Editar</button>
+    </div><br>
+    <div class="panel" id="reservas">
+      <h3>Mis reservas recientes</h3>
+      <div id="lista-reservas"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="contenedor">
+    <div class="cols">
+      <div>
+        <h3>AVYNERA</h3>
+        <p>Descubre nuevos lugares, culturas y experiencias.</p>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Explorar destinos</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="reservar.html">Reservar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <p class="copy">© 2026 Avynera. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="datos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

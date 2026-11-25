@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destinos | Avynera</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="destinos">
+
+<header class="navbar">
+  <div class="contenedor">
+    <a class="logo" href="index.html">✈ AVYNERA</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html" class="activo">Explorar</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a id="nav-sesion" class="btn-login" href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <div class="titulo-pagina">
+    <h1>Explorar destinos</h1>
+    <p class="datos">Encuentra el lugar perfecto para tu próxima aventura</p>
+  </div>
+
+  <div class="barra">
+    <form class="buscador" onsubmit="return false">
+      <span aria-hidden="true">🔍</span>
+      <input type="search" id="q" placeholder="¿A dónde quieres viajar?" aria-label="Buscar destino">
+    </form>
+    <select id="tipo" aria-label="Tipo de destino">
+      <option value="">Todos los destinos</option>
+      <option>Ciudad</option>
+      <option>Montaña</option>
+      <option>Playa</option>
+      <option>Cultura</option>
+    </select>
+  </div>
+
+  <div class="explorar">
+    <aside class="filtros">
+      <h3>Filtros</h3>
+      <h3>Tipo de destino</h3>
+      <label><input type="checkbox" name="tipo-chk" value="Playa"> Playa</label>
+      <label><input type="checkbox" name="tipo-chk" value="Ciudad"> Ciudad</label>
+      <label><input type="checkbox" name="tipo-chk" value="Montaña"> Montaña</label>
+      <label><input type="checkbox" name="tipo-chk" value="Cultura"> Cultura</label>
+
+      <h3>Precio</h3>
+      <label><input type="radio" name="precio" value="0" checked> Todos</label>
+      <label><input type="radio" name="precio" value="1"> $ (económico)</label>
+      <label><input type="radio" name="precio" value="2"> $$ (medio)</label>
+      <label><input type="radio" name="precio" value="3"> $$$ (alto)</label>
+
+      <h3>Ordenar por</h3>
+      <label><input type="radio" name="orden" value="populares" checked> Más populares</label>
+      <label><input type="radio" name="orden" value="calificacion"> Mejor calificación</label>
+      <label><input type="radio" name="orden" value="recientes"> Más recientes</label>
+    </aside>
+
+    <div>
+      <p class="datos conteo" id="conteo"></p>
+      <div class="grid3" id="resultados"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="contenedor">
+    <div class="cols">
+      <div>
+        <h3>AVYNERA</h3>
+        <p>Descubre nuevos lugares, culturas y experiencias.</p>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Explorar destinos</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="reservar.html">Reservar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <p class="copy">© 2026 Avynera. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="datos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

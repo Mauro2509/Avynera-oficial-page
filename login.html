@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iniciar sesión | Avynera</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+
+<main class="login-split">
+  <section class="login-izq">
+    <a class="logo" style="color:var(--azul)" href="index.html">✈ AVYNERA</a>
+    <h1>Tu próxima aventura comienza aquí</h1>
+    <p class="datos" style="color:var(--texto)">Inicia sesión para acceder a tus reservas, favoritos y mucho más.</p>
+    <div style="font-size:5rem">✈️</div>
+  </section>
+
+  <section class="login-der">
+    <h2 id="login-titulo">Iniciar sesión</h2>
+    <form id="form-login" class="login-form">
+      <label id="campo-nombre" hidden>Nombre<input type="text" id="nombre" placeholder="Tu nombre"></label>
+      <label>Correo electrónico<input type="email" id="email" placeholder="tu@email.com" required></label>
+      <label>Contraseña<input type="password" id="clave" placeholder="Mínimo 6 caracteres" minlength="6" required></label>
+      <button class="btn btn-primario" type="submit" id="btn-login">Iniciar sesión</button>
+    </form>
+    <p class="datos centro">o continúa con</p>
+    <div class="sociales">
+      <button class="btn btn-secundario" type="button" data-pronto>Google</button>
+      <button class="btn btn-secundario" type="button" data-pronto>Facebook</button>
+    </div>
+    <p class="datos centro"><span id="txt-pregunta">¿No tienes cuenta?</span> <button type="button" class="enlace-btn" id="alternar">Regístrate</button></p>
+  </section>
+</main>
+
+<script src="datos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
