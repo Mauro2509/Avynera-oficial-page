@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservar | Avynera</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="reservar">
+
+<header class="navbar">
+  <div class="contenedor">
+    <a class="logo" href="index.html">✈ AVYNERA</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Explorar</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a id="nav-sesion" class="btn-login" href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <div class="titulo-pagina centro">
+    <h1>Reservar viaje</h1>
+    <p class="datos">Completa tus datos para planear tu viaje.</p>
+  </div>
+  <div id="zona-reserva">
+    <form class="formulario" id="form-reserva">
+      <label>Nombre completo<input type="text" id="nombre" placeholder="Tu nombre" required></label>
+      <label>Correo electrónico<input type="email" id="email" placeholder="correo@ejemplo.com" required></label>
+      <label>Destino<select id="destino"></select></label>
+      <label>Fecha de salida<input type="date" id="fecha" required></label>
+      <label>Número de viajeros<input type="number" id="viajeros" min="1" max="10" value="1" required></label>
+      <div class="resumen"><span>Total estimado</span><span id="total"></span></div>
+      <button class="btn btn-primario" type="submit">Reservar</button>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="contenedor">
+    <div class="cols">
+      <div>
+        <h3>AVYNERA</h3>
+        <p>Descubre nuevos lugares, culturas y experiencias.</p>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Explorar destinos</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="reservar.html">Reservar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <p class="copy">© 2026 Avynera. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="datos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
